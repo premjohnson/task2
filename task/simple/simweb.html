@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            margin: 20px;
+            padding: 30px;
+            border: 5px solid #333;
+            background-color: #fff;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navigation {
+            margin: 20px 0;
+        }
+
+        .nav-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .nav-button:hover {
+            background-color: #45a049;
+        }
+
+        .container {
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid #666;
+            box-sizing: border-box;
+            background-color: #e0e0e0;
+        }
+    </style>
+    <script>
+        function showAlert(page) {
+            alert("You clicked on " + page + "!");
+        }
+    </script>
+</head>
+<body>
+    <h1>Simple Webpage</h1>
+    
+    <div class="box">
+        This is a box with margin, padding, and border.
+    </div>
+
+    <div class="navigation">
+        <a href="#" class="nav-button" onclick="showAlert('Home')">Home</a>
+        <a href="#" class="nav-button" onclick="showAlert('About')">About</a>
+        <a href="#" class="nav-button" onclick="showAlert('Services')">Services</a>
+        <a href="#" class="nav-button" onclick="showAlert('Contact')">Contact</a>
+    </div>
+
+    <div class="container">
+        This is a container with a fixed width and height.
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List use css</title>
+</head>
+<body>
+    <ul class="custom-list">
+        <li>Custom Item 1</li>
+        <li>Custom Item 2</li>
+        <li>Custom Item 3</li>
+      </ul>
+      
+      <style>
+        .custom-list {
+          list-style-type: none;
+        }
+        .custom-list li::before {
+          content: "✦ "; 
+          color: #ff6347;
+        }
+      </style>
+      
+</body>
+</html>
