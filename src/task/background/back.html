@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Backgrounds</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('./23-231621_high-resolution-photoshop-background.webp'); 
+            background-size: cover; 
+            background-position: center; 
+            height: 100vh; /* Ensure the body takes full viewport height */
+        }
+
+        .gradient-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #ff7e5f, #feb47b);
+            color: rgb(26, 20, 20);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .gradient-button:hover {
+            background: linear-gradient(45deg, #feb47b, #ff7e5f);
+        }
+
+        .pattern-section {
+            background-image: url('./color-depth-of-field-environment-1591447.jpg'); 
+            background-repeat: repeat; 
+            padding: 50px;
+            margin: 20px 0;
+            color: #ede8e8;
+            border-radius: 10px;
+            opacity: 0.9; /* Optional: Slight transparency for better text visibility */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(32, 29, 29);">Welcome to My Webpage</h1>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="#" class="gradient-button" id="alertButton">Click Me!</a>
+    </div>
+
+    <div class="pattern-section">
+        <h2>Section with Repeating Background Pattern</h2>
+        <p>This section has a repeating background pattern applied. Customize the content as needed.</p>
+    </div>
+
+    <script>
+        document.getElementById('alertButton').addEventListener('click', function(event) {
+            event.preventDefault();
+            alert('Button Clicked!');
+        });
+    </script>
+</body>
+</html>
